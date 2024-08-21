@@ -1,0 +1,481 @@
+@import url('https://fonts.googleapis.com/css?family=Noto%20Sans%20Gurmukhi:700|Noto%20Sans%20Gurmukhi:400');
+@import url('https://fonts.googleapis.com/css?family=Bellota:700|Bellota:400');
+@import url('https://fonts.googleapis.com/css?family=Major%20Mono%20Display:700|Major%20Mono%20Display:400');
+@import url('https://fonts.googleapis.com/css?family=Secular%20One:700|Secular%20One:400');
+
+/* TODO Relevant Colors
+--text: #1b120e;
+--background: #f6e9e4;
+--primary: #3b180d;
+--primary: #f2cfc4;
+--secondary: #ea9575;
+--accent: #c53e0d;
+--another: #5AC066;
+*/
+
+html {
+    background-color: black;
+}
+
+body {
+    margin: 0 auto;
+    font-weight: 400; color: #F6EAE5;  
+    background-color: #19361d27; 
+    font-family: "Arial", sans-serif;
+}
+
+h2, h3, h4, h5 {
+    font-family: 'Secular One';
+    font-weight: 700;
+}
+
+
+/* TODO Header */
+/* ? Header Part 1 */
+header .logo {
+    grid-column: span 1;
+    width: 150%;
+}
+
+.grid {
+    display: grid; gap: 30px;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+header {
+    background-color: black;
+    color: #F6EAE5;
+    padding: 5px 40px; align-items: center;
+}
+
+header .main-title {
+    grid-column: 2 / span 5;
+    font-family: "Major Mono Display", sans-serif;
+    font-size: 3rem;
+    font-weight: 700px;
+    word-spacing: 5px;
+    color: #F6EAE5;
+    text-align: center;
+    justify-self: right;
+}
+
+header .v-header-edit {
+    color: #5AC066;
+}
+
+.h1-running-club {
+    text-decoration: underline;
+}
+
+header nav {
+    grid-column: 7 / span 6;
+    justify-self: right;
+    color: #F6EAE5;
+    padding: 2rem 0;
+    border-bottom:#5ac0666c solid 5px;
+    border-top: #5AC0666c solid 5px;
+}
+
+.links {
+    text-decoration: none; margin-left: 15px;
+    color: #F6EAE5; padding: 5px;
+}
+
+.search {
+    border-radius: 15px;
+    border: #5AC066 solid 3px;
+}
+
+.header-links .links:hover {
+    text-decoration: underline;
+    color: #5AC066;
+    opacity: 70%;
+}
+
+/* ? Header Part 2 */
+.sub-links .links:hover {
+    text-decoration: underline;
+    background-color:#162e1969;
+    opacity: 70%;
+}
+
+.sub-links {
+    background-color: #011100fc;
+    display: flex;
+    justify-content: space-evenly;
+    letter-spacing: .5px;
+    border-bottom:#5AC066 solid 5px;
+    border-top: #5AC066 solid 5px;
+
+}
+
+.sub-links .links {
+    padding: 10px 5px;
+    color: #F6EAE5; 
+}
+
+/* ! Dropdown content to be fixed */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+
+.dropdown-content {
+    display: none;
+}
+
+.dropdown-button:hover .dropdown-content {
+    display: block;
+    background-color: red;
+}
+/* ! ^ */
+
+/* TODO Main Content Properties */
+/* ? Landing Page - Top */
+main {
+    margin: 60px auto; padding: 20px;
+    max-width: 1200px; 
+}
+
+.intro-header {
+    grid-column: span 5;
+    font-size: 3.5rem;
+    text-decoration: underline;
+}
+
+.intro-header .edit-fitness {
+    font-family: "bellota", sans-serif;
+    color: #5AC066;
+    text-decoration: underline;
+}
+
+.intro-header .edit-made-easy {
+    color: #5AC066;
+    text-decoration:underline;
+}
+
+.intro {
+    grid-column: 6 / span 7;
+    border: #5AC066 5px solid;
+    border-radius: 10px; padding: 0 20px;
+    text-align: center;
+    background-color: #19361d27;
+}
+
+.intro .fa-solid {
+    width: 100%;
+    text-align: center;
+    font-size: 300%;
+    color: #F6EAE5;
+}
+
+.intro h2 {
+    font-size: 2rem;
+    grid-column: span 12;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+}
+
+
+.intro p {
+    padding: 10px 20px;
+    font-size:larger;
+    font-weight: lighter;   
+}
+
+
+/* ? Landing Page - Middle */
+.background-image {
+    grid-column: span 12;
+    width: 100%;
+    margin: 0 auto;
+    background-image: url("/Bootkampf/Images/veloc.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: overlay;
+    background-position: bottom;
+    border: #5AC066 solid 5px;
+
+    background-color: #00000087;
+}
+
+.LP-middle h2 {
+    text-align: center;
+    font-size: 4.2rem;
+    font-weight: 700px;
+    color: #F6EAE5;
+    letter-spacing: 2px;
+
+}
+
+.LP-middle {
+    background-color: #000000ad;
+    font-family: 'Secular One', sans-serif;
+}
+
+.LP-middle p {
+    color: #F6EAE5;
+    text-align: center;
+    padding: 0 20px 20px 20px;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px; font-weight: lighter;
+    line-height: 50px;
+}
+
+/* ? Landing Page - Bottom */
+main .card-heading {
+    text-align: center; 
+
+    font-size: 2rem;
+    font-weight: 700px;
+    word-spacing: 5px;
+    color:#F6EAE5;
+    letter-spacing: 2px;
+    grid-column: span 12;
+}
+
+main .card {
+    grid-column: span 4;
+    color: #F6EAE5;
+    padding: 10px 40px;
+    background-color: #19361d27;
+    border-radius: 5px;
+    border: #5AC066 solid 5px;
+}
+
+main .card .card-icon {
+    display: flex;
+    justify-content: center;
+    font-size: 1.75rem;
+}
+
+main .card-header {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+main .card p {
+    text-align: center;
+    font-size: 1.25rem;
+}
+
+
+/* TODO Footer */
+
+.contact {
+    background-color: #0000007a;
+    color: #F6EAE5;
+    border-top: white solid 2px;
+    border-bottom: 2px black solid;
+    background-image: url("https://e3.365dm.com/24/04/1600x900/skynews-london-marathon-running_6528344.jpg?20240421030023");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: overlay;
+    font-family: 'Noto Sans Gurmukhi', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.1rem;
+    padding: 25px 40px; align-items: center;
+
+}
+
+/* ? Form */
+.feedback-title {
+    grid-column: 2 / span 4;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700px;
+    word-spacing: 5px;
+    color:#F6EAE5;
+    letter-spacing: 2px;
+    text-shadow: #F6EAE5;
+}
+
+.labels {
+    grid-column: 7 / span 2;
+    text-align: right;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    border-left: solid #fafafa 2px;
+    color: #F6EAE5;
+    font-weight: bold;
+}
+
+.inputs {
+    grid-column: 9 / span 4;
+    text-align: left;
+    list-style-type: none;
+}
+
+#submit {
+    grid-column: 9 / span 1;
+}
+
+footer .f-input {
+    border: #5AC066 solid 2px;
+    border-radius: 10px;
+    justify-self: center;
+    grid-column: span 12;
+}
+
+/* Contact bar below footer */
+.contact-info {
+    border-top: solid white 2px;
+    grid-column: span 12;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.socials {
+    grid-column: span 12;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+}
+
+.socials .fa-brands {
+    font-size: 200%;
+}
+
+
+/* Media Query for screen size */
+@media screen and (max-width: 1200px) {
+    .sub-links {
+        overflow-x: scroll;
+        white-space: nowrap;
+        grid-row: span 1;
+    }
+
+    header img {
+        display: none;
+    }
+
+    header .main-title {
+        grid-column: span 6;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        font-size: 3rem;
+    }
+
+    .to-go {
+        display: none;
+    }
+
+    .header-links{
+        border-top: #5ac0666c solid 5px;
+        border-bottom: #5ac0666c solid 5px; ;
+        overflow-x: scroll;
+        white-space: nowrap;
+        grid-column: 7 / span 6;
+    }
+
+    .header-links .search {
+        display: none;
+    }
+
+    .intro-header {
+        grid-column: span 12;
+        text-align: center;
+        font-size: 3rem;
+    }
+
+    .intro {
+        grid-column: span 12;
+    }
+
+    .LP-middle h2 {
+        font-size: 2.5rem;
+    }
+
+    .LP-middle p {
+        font-size: 1.25rem;
+        word-spacing: 0; line-height: normal;
+    }
+
+    main .card {
+        grid-column: span 6;
+    }
+    
+    .hide-contact {
+        display: none;
+    }
+
+    .feedback-title {
+        padding: 0;
+        font-size: 1.5rem;
+        grid-column: span 12;
+        text-align: center;
+    }
+
+    .labels {
+        text-align: right;
+        border: none;
+        grid-column: 3 / span 3;
+    }
+
+    .inputs {
+        grid-column: 6 / span 7;
+    }
+    
+    #submit {
+        grid-column: 6 / span 1;
+    }
+
+    .socials .fa-brands {
+        font-size: 1.5rem;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 1406px) {
+    .logo {
+        display: none;
+    }
+
+    .search {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 679px) {
+
+
+    header .main-title {
+        grid-column: span 12;
+        justify-content: center;
+    }
+
+    .header-links {
+        display: none;
+    }
+
+    .sub-links {
+        grid-row: span 1;
+        overflow-x: scroll;
+        white-space: nowrap;
+    }
+  
+    main .card {
+        grid-column: span 12;
+    }
+}
+
